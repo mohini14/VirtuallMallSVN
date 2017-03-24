@@ -1,0 +1,54 @@
+//
+//  Utility.m
+//  Virtual Mall
+//
+//  Created by Aditya Kumar on 06/03/17.
+//  Copyright © 2017 mindfire. All rights reserved.
+//
+#import "Utility.h"
+#import "Define.h"
+#import "LoginPageViewController.h"
+#import "SWRevealViewController.h"
+#import "NSString+StringOperations.h"
+
+@implementation Utility
+
+//This method will show error message on screen
++ (void) promptErrorMessage:(NSString*)message sender:(UIViewController*)sender
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"AppName", nil) message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil) style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:ok];
+    [sender presentViewController:alert animated:YES completion:nil];
+}
+
+//Retrieve path For given NAME
++ (NSString*) retrievePathForNameInDocumentDirectory:(NSString*) fileName withFileType:(NSString*) type
+{
+    NSString*  docDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString* folderPath = [docDirectory stringByAppendingString:[NSString append:@"/" withSring:type]];
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSError* error;
+    if(![fileManager fileExistsAtPath:folderPath])
+        //create folder if does not exist
+        [fileManager createDirectoryAtPath:folderPath withIntermediateDirectories:NO attributes:nil error:&error];
+    NSString  *filePath = [folderPath stringByAppendingPathComponent:fileName];
+    return filePath;
+}
+
+//This method will connect slider menu button to third party (SWRevealVC) library
++ (void) setSliderBarButtonProperty:(UIViewController*)sender forButton:(UIBarButtonItem*)slideButton
+{
+    SWRevealViewController *revealViewController = sender.revealViewController;
+    if ( revealViewController )
+    {
+        [slideButton setTarget: sender.revealViewController];
+        [slideButton setAction: @selector( revealToggle: )];
+        [sender.view addGestureRecognizer:sender.revealViewController.panGestureRecognizer];
+    }
+}
+
+
+@end
+

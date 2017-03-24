@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="Pr6-mc-p6t" customClass="ShopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pr6-mc-p6t" id="ujT-At-sii">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DummyShopImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-h7-Xy7">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="188"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Xwt-h7-Xy7" secondAttribute="height" multiplier="397:188" id="tGD-wt-2D0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ5-ah-m7J">
+                        <rect key="frame" x="1" y="150" width="178" height="21"/>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.1803921568627451" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="178" id="yo3-zS-CaF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQt-tv-7uR">
+                        <rect key="frame" x="1" y="121" width="130" height="21"/>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.1803921568627451" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="EaS-dJ-BBu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star4.png" translatesAutoresizingMaskIntoConstraints="NO" id="vac-Zj-Mui">
+                        <rect key="frame" x="267" y="147" width="122" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="122" id="a8l-W5-d7u"/>
+                            <constraint firstAttribute="height" constant="24" id="y9S-FZ-POp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvj-Ct-PRw">
+                        <rect key="frame" x="0.0" y="186" width="397" height="2"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="nBy-ZY-1jE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xwt-h7-Xy7" firstAttribute="leading" secondItem="ujT-At-sii" secondAttribute="leading" id="0SS-sy-e2h"/>
+                    <constraint firstItem="vac-Zj-Mui" firstAttribute="trailing" secondItem="ujT-At-sii" secondAttribute="trailingMargin" id="18G-et-2HL"/>
+                    <constraint firstItem="ZQt-tv-7uR" firstAttribute="leading" secondItem="jZ5-ah-m7J" secondAttribute="leading" id="43O-sM-WUk"/>
+                    <constraint firstAttribute="bottom" secondItem="jZ5-ah-m7J" secondAttribute="bottom" constant="17" id="5aR-Ai-buE"/>
+                    <constraint firstAttribute="bottom" secondItem="Xwt-h7-Xy7" secondAttribute="bottom" id="7j7-HA-G6i"/>
+                    <constraint firstItem="jZ5-ah-m7J" firstAttribute="top" secondItem="ZQt-tv-7uR" secondAttribute="bottom" constant="8" id="8KH-n4-8aa"/>
+                    <constraint firstAttribute="trailing" secondItem="Zvj-Ct-PRw" secondAttribute="trailing" id="IJg-H7-Wye"/>
+                    <constraint firstItem="ZQt-tv-7uR" firstAttribute="leading" secondItem="ujT-At-sii" secondAttribute="leadingMargin" constant="-7" id="Ito-qm-Zlj"/>
+                    <constraint firstItem="Zvj-Ct-PRw" firstAttribute="leading" secondItem="ujT-At-sii" secondAttribute="leading" id="Ojo-JG-kPL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vac-Zj-Mui" secondAttribute="bottom" constant="9" id="hRn-Wc-dGY"/>
+                    <constraint firstItem="Xwt-h7-Xy7" firstAttribute="top" secondItem="ujT-At-sii" secondAttribute="top" id="l5e-vI-siQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Zvj-Ct-PRw" secondAttribute="bottom" id="qdm-I0-7SY"/>
+                    <constraint firstAttribute="trailing" secondItem="Xwt-h7-Xy7" secondAttribute="trailing" id="xrC-dW-U0m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shopAddressLabel" destination="jZ5-ah-m7J" id="JzT-hC-04w"/>
+                <outlet property="shopImageView" destination="Xwt-h7-Xy7" id="QNV-mX-yd5"/>
+                <outlet property="shopNameLabel" destination="ZQt-tv-7uR" id="16B-zH-m7I"/>
+                <outlet property="shopRatingImageView" destination="vac-Zj-Mui" id="pRs-5s-5a7"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="8.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DummyShopImage.jpg" width="300" height="181"/>
+        <image name="Star4.png" width="722" height="133"/>
+    </resources>
+</document>

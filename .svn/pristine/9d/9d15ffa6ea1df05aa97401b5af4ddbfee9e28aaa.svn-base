@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d1363eba-b88c-5740-8ab5-27d364fc234b++2492",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++5830" : {
+
+    },
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++2492" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++5830" : 9223372036854775807,
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++2492" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C7B94D3D-1201-41AD-BA66-12A0570E1C56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++5830" : "Virtual%20Mall\/",
+    "d1363eba-b88c-5740-8ab5-27d364fc234b++2492" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Virtual Mall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Virtual Mall.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/dev.mindfire.in\/dlwa\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d1363eba-b88c-5740-8ab5-27d364fc234b++2492"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/dev.mindfire.in\/dlwa\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d1363eba-b88c-5740-8ab5-27d364fc234b++5830"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+/*
+ Localizable.strings
+ Virtual Mall
+ 
+ Created by Mohini Sindhu  on 14/03/17.
+ Copyright © 2017 mindfire. All rights reserved.
+ */
+
+
+"'First Name' "		 = "'First Name' " ;
+"'Last Name' "		 = "'Last Name' " ;
+"'Email' "			 = "'Email' " ;
+"'Contact' "		 = "'Contact' " ;
+"'Password' "		 = "'Password' " ;
+"SignUp Succesfully" = "SignUp Succesfully" ;
+": Field is Empty"   = " : Field is Empty" ;
+"AppName"            = "VIRTUAL MALL";
+"OK"                 = "OK";
+"Invalid Email"      = "Invalid Email";
+"Invalid Password"   = "Invalid Password";
+
+"Min length reqired is :" = "Min length reqired is :" ;
+"Max length reqired is :" = "Max length reqired is :" ;
+"Not a proper Format :"   = "Not a proper Format :" ;
+"Invalid Email and Password" = "Invalid Email and Password";
+
+" doesnot Match with Confirm password Field" = " doesnot Match with Confirm password Field" ;
+

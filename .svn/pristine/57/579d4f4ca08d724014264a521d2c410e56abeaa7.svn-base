@@ -1,0 +1,22 @@
+//
+//  DataParser.m
+//  Virtual Mall
+//
+//  Created by Mohini Sindhu  on 23/03/17.
+//  Copyright © 2017 mindfire. All rights reserved.
+//
+
+#import "DataParser.h"
+
+@implementation DataParser
+
++(void) Registration :(NSDictionary*) dict withCompletion:(void (^) (NSDictionary* dict , NSString* errorMsg))callBackToMainVC
+{
+	NSURLRequest* request=[WebServiceManager makeRequest:@""]; //to be done
+	[WebServiceManager GetWithRequest:request withCompletionHandler:^(NSDictionary *dict, NSString *errorMsg)
+	{
+		//parsing to model class to be done.
+	}];
+}
+
+@end

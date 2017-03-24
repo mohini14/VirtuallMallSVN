@@ -1,0 +1,55 @@
+//
+//  WebServiceManager.m
+//  Virtual Mall
+//
+//  Created by Mohini Sindhu  on 23/03/17.
+//  Copyright © 2017 mindfire. All rights reserved.
+//
+
+#import "WebServiceManager.h"
+
+@implementation WebServiceManager
+
+// method makes request before sending it to server
++(NSURLRequest* ) makeRequest : (NSString* )urlString
+{
+	NSURL* url = [NSURL URLWithString:urlString];
+	NSLog(@"URL DESC= %@" ,url.description);
+	NSMutableURLRequest* urlRequest = [NSMutableURLRequest requestWithURL:url];
+	[urlRequest setHTTPMethod:@"GET"];
+	return urlRequest;
+}
+
+
+
++(void) GetWithRequest : (NSURLRequest *)urlRequest withCompletionHandler : (void (^) (NSDictionary* , NSString* )) callBackToParser
+{
+	NSURLSession* session = [NSURLSession sharedSession];
+	NSURLSessionDataTask* dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
+	{
+		NSString* errorMsg=nil;
+		NSDictionary *responseData = nil;
+		NSError* err = nil;
+		if(error != nil)
+			errorMsg  = @"SERVER ERROR"; // when response is of the type 5XX
+		else
+		{
+			responseData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&err];
+			if(err != nil)
+			{
+				errorMsg=err.description; // if data is not parsable
+			}
+		}
+		dispatch_async(dispatch_get_main_queue(), ^{
+			callBackToParser(responseData,errorMsg);
+		});
+
+	}];
+	[dataTask resume];
+}
+@end
+
+
+
+
+
